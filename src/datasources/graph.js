@@ -116,7 +116,6 @@ class GraphAPI extends DataSource {
 
     // GraphAPI
     async query(q) {
-        console.log("q: " + q);
         const response = await this.graph.graph.query(q);
         return response;
     }
